@@ -1,0 +1,33 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+    const elements = document.querySelectorAll(
+        ".card, .impact-grid article, .steps div, .solutions div"
+    );
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    elements.forEach((element) => {
+
+        element.style.opacity = "0";
+        element.style.transform = "translateY(25px)";
+        element.style.transition = "0.6s ease";
+
+        observer.observe(element);
+
+    });
+
+});
