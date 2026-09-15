@@ -1776,3 +1776,379 @@ footer p {
     }
 
 }
+/* =========================================
+   IMPACTOS AMBIENTAIS
+========================================= */
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 45px;
+}
+
+
+/* CARD */
+
+.impact-card {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+
+    background: #fff;
+    border: 1px solid #dedfd7;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(20, 35, 25, 0.09);
+}
+
+
+/* CABEÇALHO */
+
+.impact-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.impact-header span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #71875d;
+}
+
+.impact-header button {
+    width: 28px;
+    height: 28px;
+
+    padding: 0;
+
+    border: 1px solid #cfd4ca;
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #71875d;
+
+    font-size: 18px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* TÍTULO */
+
+.impact-card h3 {
+    margin: 25px 0 9px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #20251f;
+}
+
+
+/* TEXTO */
+
+.impact-card > p {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #686f66;
+}
+
+
+/* =========================================
+   IMAGEM
+   FICA COMPLETAMENTE ESCONDIDA
+========================================= */
+
+.impact-image {
+    display: none;
+}
+
+.impact-image img {
+    display: block;
+    width: 100%;
+    height: 120px;
+
+    object-fit: cover;
+}
+
+
+/* TEXTO DE CLIQUE */
+
+.impact-card small {
+    display: block;
+
+    margin-top: 20px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+
+    color: #8a9285;
+}
+
+
+/* =========================================
+   QUANDO CLICAR
+========================================= */
+
+.impact-card.open .impact-image {
+    display: block;
+
+    margin-top: 20px;
+}
+
+.impact-card.open .impact-header button {
+    transform: rotate(45deg);
+
+    background: #17231a;
+    border-color: #17231a;
+
+    color: #fff;
+}
+
+.impact-card.open small {
+    display: none;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 30px;
+    }
+
+    .impact-card {
+        padding: 22px;
+    }
+
+    .impact-card h3 {
+        font-size: 25px;
+        margin-top: 22px;
+    }
+
+    .impact-card > p {
+        font-size: 13px;
+    }
+
+    .impact-image img {
+        height: 115px;
+    }
+}
+/* =========================================
+   IMPACTOS AMBIENTAIS
+========================================= */
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 45px;
+}
+
+
+/* CARD */
+
+.impact-card {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+
+    background: #fff;
+    border: 1px solid #dedfd7;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(20, 35, 25, 0.09);
+}
+
+
+/* CABEÇALHO */
+
+.impact-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.impact-header span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #71875d;
+}
+
+.impact-header button {
+    width: 28px;
+    height: 28px;
+
+    padding: 0;
+
+    border: 1px solid #cfd4ca;
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #71875d;
+
+    font-size: 18px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* TÍTULO */
+
+.impact-card h3 {
+    margin: 25px 0 9px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #20251f;
+}
+
+
+/* TEXTO */
+
+.impact-card > p {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #686f66;
+}
+
+
+/* =========================================
+   IMAGEM
+   FICA COMPLETAMENTE ESCONDIDA
+========================================= */
+
+.impact-image {
+    display: none;
+}
+
+.impact-image img {
+    display: block;
+    width: 100%;
+    height: 120px;
+
+    object-fit: cover;
+}
+
+
+/* TEXTO DE CLIQUE */
+
+.impact-card small {
+    display: block;
+
+    margin-top: 20px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+
+    color: #8a9285;
+}
+
+
+/* =========================================
+   QUANDO CLICAR
+========================================= */
+
+.impact-card.open .impact-image {
+    display: block;
+
+    margin-top: 20px;
+}
+
+.impact-card.open .impact-header button {
+    transform: rotate(45deg);
+
+    background: #17231a;
+    border-color: #17231a;
+
+    color: #fff;
+}
+
+.impact-card.open small {
+    display: none;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 30px;
+    }
+
+    .impact-card {
+        padding: 22px;
+    }
+
+    .impact-card h3 {
+        font-size: 25px;
+        margin-top: 22px;
+    }
+
+    .impact-card > p {
+        font-size: 13px;
+    }
+
+    .impact-image img {
+        height: 115px;
+    }
+}
