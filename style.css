@@ -1329,3 +1329,23 @@ footer p {
         font-size: 150px;
     }
 }
+/* CORREÇÃO DO TÍTULO DA CAPA NO CELULAR */
+
+@media (max-width: 900px) {
+
+    .hero h1 {
+        font-size: 44px;
+        line-height: 0.95;
+        letter-spacing: -2px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero h1 span {
+        font-size: 30px;
+        line-height: 1;
+        letter-spacing: -1px;
+        white-space: nowrap;
+    }
+
+}
