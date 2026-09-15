@@ -850,4 +850,172 @@ footer p {
         padding: 45px 25px;
     }
 
+} 
+/* =========================================
+   ÁREA — POR QUE ESCOLHEMOS ESSE TEMA?
+   ========================================= */
+
+.project-reason {
+    width: 100%;
+    padding: 120px 9%;
+    background: #f8f7f2;
+    color: #20251f;
+    position: relative;
+}
+
+.reason-content {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* título pequeno */
+.project-reason .small-title {
+    margin-bottom: 18px !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    color: #71875d !important;
+}
+
+/* título principal */
+.reason-content h2 {
+    max-width: 850px;
+
+    margin: 0 0 45px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(45px, 6vw, 78px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -1.5px;
+
+    color: #17231a;
+}
+
+/* bloco dos textos */
+.reason-content > p:not(.small-title) {
+    max-width: 850px;
+
+    margin: 0 0 22px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #596057;
+}
+
+/* =========================================
+   QUADRINHO — O OBJETIVO
+   ========================================= */
+
+.reason-highlight {
+    position: relative;
+
+    max-width: 900px;
+    margin-top: 50px;
+    padding: 32px 38px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background: #17231a;
+    color: white;
+
+    border: 1px solid rgba(145, 167, 124, 0.35);
+    border-left: 5px solid #91a77c;
+    border-radius: 4px;
+
+    box-shadow: 0 18px 40px rgba(23, 35, 26, 0.12);
+
+    overflow: hidden;
+}
+
+/* detalhe decorativo */
+.reason-highlight::before {
+    content: "✦";
+
+    position: absolute;
+    top: 10px;
+    right: 25px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 55px;
+
+    color: rgba(145, 167, 124, 0.18);
+}
+
+/* título */
+.reason-highlight strong {
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    color: #91a77c;
+}
+
+/* texto */
+.reason-highlight span {
+    max-width: 750px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* CELULAR */
+@media (max-width: 900px) {
+
+    .reason-highlight {
+        margin-top: 35px;
+        padding: 26px 28px;
+    }
+
+    .reason-highlight span {
+        font-size: 16px;
+    }
+
+    .reason-highlight::before {
+        font-size: 40px;
+        right: 15px;
+    }
+}
+
+/* =========================================
+   VERSÃO CELULAR
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .project-reason {
+        padding: 80px 7%;
+    }
+
+    .reason-content h2 {
+        margin-bottom: 30px;
+
+        font-size: clamp(42px, 12vw, 65px);
+        line-height: 0.95;
+    }
+
+    .reason-content > p:not(.small-title) {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .reason-highlight {
+        margin-top: 35px;
+        padding: 22px;
+    }
 }
