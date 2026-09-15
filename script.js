@@ -47,3 +47,10 @@ menuLinks.forEach((link) => {
         menu.classList.remove("active");
     });
 });
+/* =========================================
+   ABRIR IMAGEM DOS CARDS
+========================================= */
+
+function toggleStep(card) {
+    card.classList.toggle("open");
+}
