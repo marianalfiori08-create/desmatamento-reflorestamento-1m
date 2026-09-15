@@ -31,3 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+// MENU PARA CELULAR
+
+const menuButton = document.getElementById("menuButton");
+const menu = document.getElementById("menu");
+
+menuButton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+const menuLinks = menu.querySelectorAll("a");
+
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+    });
+});

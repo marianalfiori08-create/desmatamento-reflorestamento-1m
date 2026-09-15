@@ -44,6 +44,14 @@ h1, h2, h3 {
 .logo span {
     color: #91a77c;
 }
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
 
 .menu {
     display: flex;
@@ -235,6 +243,91 @@ h1, h2, h3 {
     padding: 25px;
     font-weight: 600;
 }
+/* CAUSAS INTERATIVAS */
+
+.causes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.cause-card {
+    background: white;
+    border: 1px solid #dedfd7;
+    overflow: hidden;
+    transition: 0.35s ease;
+}
+
+.cause-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(20, 35, 25, 0.12);
+}
+
+.cause-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.cause-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.cause-card:hover .cause-image img {
+    transform: scale(1.08);
+}
+
+.cause-content {
+    padding: 25px;
+}
+
+.cause-number {
+    font-size: 12px;
+    font-weight: 700;
+    color: #78915f;
+    letter-spacing: 2px;
+}
+
+.cause-content h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    margin: 10px 0;
+    color: #20251f;
+}
+
+.cause-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.cause-button {
+    border: none;
+    background: none;
+    padding: 0;
+    color: #49643d;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cause-more {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dedfd7;
+    color: #555c53;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.cause-card.open .cause-more {
+    display: block;
+}
 
 
 /* REFLORESTAMENTO */
@@ -338,17 +431,45 @@ footer p {
 
 @media (max-width: 900px) {
 
-    .menu {
-        display: none;
+    .menu-button {
+        display: block;
     }
 
-    .cards-section,
-    .info-grid,
-    .steps,
-    .impact-grid,
-    .solutions {
-        grid-template-columns: 1fr;
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        background: #142319;
+        padding: 10px 0;
     }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 15px;
+        font-size: 15px;
+    }
+  .cards-section,
+.info-grid,
+.steps,
+.impact-grid,
+.solutions,
+.causes-grid,
+.teachers {
+    grid-template-columns: 1fr;
+}
 
     .hero h1 {
         letter-spacing: -1px;
