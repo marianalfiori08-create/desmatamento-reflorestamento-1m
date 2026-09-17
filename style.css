@@ -2419,8 +2419,8 @@ footer p {
 }
 .teacher-photo {
     width: 100%;
-    height: 260px;
-    margin-top: 25px;
+    height: 300px;
+    margin: 25px 0;
     overflow: hidden;
     background: #e9ece7;
 }
@@ -2429,9 +2429,44 @@ footer p {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
+    background: #e9ece7;
 }
+.teacher-card {
+    position: relative;
+    padding: 30px;
+    background: white;
+    border: 1px solid #dedfd7;
+    overflow: hidden;
+}
+
+.teacher-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    background: #71875d;
+    z-index: 0;
+}
+
+.teacher-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.teacher-top {
+    position: relative;
+    z-index: 2;
+}
+
+.teacher-icon {
+    color: white !important;
+}
+
+
 @media (max-width: 900px) {
     .teacher-photo {
         height: 300px;
@@ -2645,5 +2680,14 @@ footer p {
         width: 28px;
         height: 28px;
         font-size: 13px;
+    }
+}
+@media (max-width: 900px) {
+    .teachers {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-photo {
+        height: 340px;
     }
 }
