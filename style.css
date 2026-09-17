@@ -2162,3 +2162,15 @@ footer p {
         height: 115px;
     }
 }
+.data-graph {
+    width: 100%;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.data-graph img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
