@@ -2733,10 +2733,7 @@ footer p {
     position: relative !important;
     z-index: 5 !important;
 }
-
-/* FOTO */
 .teacher-photo {
-    position: relative !important;
     width: 100% !important;
     height: 300px !important;
     margin: 25px 0 !important;
@@ -2744,29 +2741,25 @@ footer p {
     background: #e9ece7 !important;
 }
 
-/* NÃO CORTAR A FOTO */
 .teacher-photo img {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    object-fit: contain !important;
-    object-position: center center !important;
-
-    background: #e9ece7 !important;
+    object-fit: cover !important;
+    object-position: center !important;
 }
 
 /* NOME */
 .teacher-card h3 {
     color: #20251f !important;
+    margin-top: 20px !important;
     margin-bottom: 8px !important;
 }
 
 /* CARGO */
 .teacher-card h4 {
     color: #71875d !important;
+    margin-top: 0 !important;
 }
 
 /* LINHA */
@@ -2779,6 +2772,17 @@ footer p {
     color: #686f66 !important;
     line-height: 1.6 !important;
 }
+
+
+/* =========================================
+   AJUSTES INDIVIDUAIS DAS FOTOS
+========================================= */
+
+/* Jaqueline — mostra a foto mais para cima */
+.teacher-card:nth-child(2) .teacher-photo img {
+    object-position: center 25% !important;
+}
+
 
 /* =========================================
    CELULAR
