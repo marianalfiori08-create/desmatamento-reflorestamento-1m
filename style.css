@@ -2164,13 +2164,17 @@ footer p {
 }
 .data-graph {
     width: 100%;
-    margin-top: 25px;
+    max-width: 900px;
+    margin: 30px auto 0;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
 .data-graph img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    object-fit: contain;
+    box-sizing: border-box;
 }
