@@ -2691,3 +2691,116 @@ footer p {
         height: 340px;
     }
 }
+/* =========================================
+   CORREÇÃO FINAL — CARDS DAS PROFESSORAS
+========================================= */
+
+.teacher-card {
+    position: relative !important;
+    padding: 30px !important;
+    background: #ffffff !important;
+    border: 1px solid #dedfd7 !important;
+    overflow: hidden !important;
+    color: #20251f !important;
+}
+
+/* QUADRADO VERDE NO CANTO */
+.teacher-card::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 72px !important;
+    height: 72px !important;
+    background: #71875d !important;
+    z-index: 0 !important;
+}
+
+/* conteúdo fica acima do quadrado */
+.teacher-card > * {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* número */
+.teacher-top > span:first-child {
+    color: #71875d !important;
+}
+
+/* estrela dentro do quadrado */
+.teacher-top .teacher-icon {
+    color: #ffffff !important;
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+/* FOTO */
+.teacher-photo {
+    position: relative !important;
+    width: 100% !important;
+    height: 300px !important;
+    margin: 25px 0 !important;
+    overflow: hidden !important;
+    background: #e9ece7 !important;
+}
+
+/* NÃO CORTAR A FOTO */
+.teacher-photo img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    background: #e9ece7 !important;
+}
+
+/* NOME */
+.teacher-card h3 {
+    color: #20251f !important;
+    margin-bottom: 8px !important;
+}
+
+/* CARGO */
+.teacher-card h4 {
+    color: #71875d !important;
+}
+
+/* LINHA */
+.teacher-line {
+    background: #b9c4b0 !important;
+}
+
+/* TEXTO */
+.teacher-card p {
+    color: #686f66 !important;
+    line-height: 1.6 !important;
+}
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 900px) {
+
+    .teachers {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .teacher-card {
+        padding: 25px !important;
+    }
+
+    .teacher-photo {
+        height: 340px !important;
+    }
+
+    .teacher-card::before {
+        width: 65px !important;
+        height: 65px !important;
+    }
+}
