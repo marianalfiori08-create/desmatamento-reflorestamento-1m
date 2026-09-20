@@ -2808,3 +2808,13 @@ footer p {
         height: 65px !important;
     }
 }
+@media (max-width: 700px) {
+    .class-photo img {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        object-fit: contain !important;
+        object-position: center !important;
+    }
+}
