@@ -2864,3 +2864,339 @@ footer p {
         object-position: center !important;
     }
 }
+/* =====================================================
+   DEDICAÇÃO — ESTÉTICA EDITORIAL
+===================================================== */
+
+.dedication {
+    position: relative;
+    background: #f5f5f0;
+    color: #20251f;
+    padding: 120px 8%;
+    overflow: hidden;
+}
+
+.dedication-content {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+.dedication-header {
+    max-width: 720px;
+    margin-bottom: 75px;
+}
+
+.dedication-header .small-title {
+    margin: 0 0 22px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #71875d;
+}
+
+.dedication-header h2 {
+    margin: 0;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(55px, 7vw, 88px);
+    font-weight: 400;
+    line-height: .94;
+    letter-spacing: -2px;
+    color: #20251f;
+}
+
+.dedication-header h2 span {
+    color: #71875d;
+}
+
+.dedication-intro {
+    max-width: 560px;
+    margin: 30px 0 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #686f66;
+}
+
+
+/* PROFESSORAS */
+
+.teachers-editorial {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 55px;
+
+    border-top: 1px solid #d5d9d1;
+    padding-top: 25px;
+}
+
+.teacher-editorial {
+    position: relative;
+}
+
+
+/* TOPO */
+
+.teacher-editorial-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.teacher-number {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #71875d;
+}
+
+.teacher-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    margin-top: -25px;
+    margin-right: -1px;
+
+    background: #71875d;
+    color: white;
+
+    font-size: 18px;
+}
+
+
+/* FOTO */
+
+.teacher-editorial-photo {
+    width: 72%;
+    max-width: 190px;
+
+    margin: 0 0 30px;
+
+    overflow: hidden;
+    background: #e9ece7;
+}
+
+.teacher-editorial-photo img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    transition: transform .5s ease;
+}
+
+.teacher-editorial:hover .teacher-editorial-photo img {
+    transform: scale(1.025);
+}
+
+
+/* TEXTO */
+
+.teacher-editorial-info {
+    max-width: 290px;
+}
+
+.teacher-editorial-info h3 {
+    margin: 0 0 10px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 34px;
+    font-weight: 400;
+
+    line-height: .95;
+    letter-spacing: -.5px;
+
+    color: #20251f;
+}
+
+.teacher-role {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+
+    color: #71875d;
+}
+
+.teacher-editorial-line {
+    width: 38px;
+    height: 1px;
+
+    margin: 22px 0 18px;
+
+    background: #b9c4b0;
+}
+
+.teacher-description {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.65;
+
+    color: #686f66;
+}
+
+
+/* AGRADECIMENTO FINAL */
+
+.dedication-message {
+    display: grid;
+
+    grid-template-columns: 50px minmax(0, 680px);
+    column-gap: 20px;
+
+    margin-top: 100px;
+}
+
+.message-line {
+    width: 42px;
+    height: 1px;
+
+    margin-top: 13px;
+
+    background: #91a77c;
+}
+
+.dedication-message p {
+    margin: 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    line-height: 1.4;
+
+    color: #20251f;
+}
+
+.message-signature {
+    grid-column: 2;
+
+    margin-top: 20px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #71875d;
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .dedication {
+        padding: 85px 7%;
+    }
+
+    .dedication-header {
+        margin-bottom: 55px;
+    }
+
+    .dedication-header h2 {
+        font-size: 52px;
+        line-height: .98;
+        letter-spacing: -1px;
+    }
+
+    .dedication-intro {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+
+    .teachers-editorial {
+        grid-template-columns: 1fr;
+        gap: 65px;
+        padding-top: 20px;
+    }
+
+    .teacher-editorial {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d5d9d1;
+    }
+
+    .teacher-editorial:last-child {
+        border-bottom: none;
+    }
+
+
+    .teacher-editorial-top {
+        margin-bottom: 22px;
+    }
+
+    .teacher-star {
+        width: 42px;
+        height: 42px;
+
+        margin-top: -20px;
+
+        font-size: 17px;
+    }
+
+
+    .teacher-editorial-photo {
+        width: 58%;
+        max-width: 190px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .teacher-editorial-info {
+        max-width: 100%;
+    }
+
+    .teacher-editorial-info h3 {
+        font-size: 38px;
+        line-height: .95;
+    }
+
+    .teacher-description {
+        max-width: 330px;
+
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+
+    .dedication-message {
+        grid-template-columns: 35px minmax(0, 1fr);
+        column-gap: 15px;
+
+        margin-top: 70px;
+    }
+
+    .message-line {
+        width: 30px;
+    }
+
+    .dedication-message p {
+        font-size: 21px;
+        line-height: 1.45;
+    }
+
+    .message-signature {
+        grid-column: 2;
+    }
+}
