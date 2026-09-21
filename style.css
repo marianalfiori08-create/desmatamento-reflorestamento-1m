@@ -6149,3 +6149,91 @@ footer p {
     }
 
 }
+/* =========================================
+   1º M — AJUSTE MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* FOTO DA TURMA */
+    .class-team-photo {
+        text-align: center !important;
+    }
+
+    .class-team-photo-header {
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 8px 25px !important;
+    }
+
+    .class-team-image {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        overflow: hidden !important;
+    }
+
+    .class-team-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        object-position: center center !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    .class-team-photo > p {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+
+    /* =========================
+       AGRADECIMENTO — 1º M
+    ========================= */
+
+    .class-thanks {
+        text-align: center !important;
+        padding: 55px 10px 20px !important;
+    }
+
+    .class-thanks-number {
+        text-align: center !important;
+        margin: 0 auto 20px !important;
+    }
+
+    .class-thanks-text {
+        width: 100% !important;
+        max-width: 500px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .class-thanks-label {
+        text-align: center !important;
+    }
+
+    .class-thanks h3 {
+        text-align: center !important;
+        font-size: 32px !important;
+        line-height: 1.12 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .class-thanks-description {
+        max-width: 480px !important;
+        margin: 25px auto !important;
+        text-align: center !important;
+        line-height: 1.75 !important;
+    }
+
+    .class-thanks-final {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
