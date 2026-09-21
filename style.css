@@ -5867,3 +5867,285 @@ footer p {
 .class-thanks-final {
     color: #ffffff !important;
 }
+
+/* =========================================
+   CORREÇÃO GERAL — CELULAR
+   SEÇÃO 03 EM DIANTE
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Evita qualquer elemento ultrapassar a tela */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section,
+    main,
+    div {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    /* =========================
+       IMPACTOS — 04
+    ========================= */
+
+    .impacts-section {
+        width: 100%;
+        padding: 60px 20px !important;
+    }
+
+    .impacts-header {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .impacts-header h2 {
+        font-size: 36px !important;
+        line-height: 1.08 !important;
+        margin-bottom: 25px !important;
+    }
+
+    .impacts-header > p {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .impacts-grid {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 35px !important;
+    }
+
+    .impact-card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .impact-image {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .impact-image img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+        object-fit: cover;
+    }
+
+    .impact-info {
+        width: 100% !important;
+        padding: 25px 20px !important;
+    }
+
+    .impact-info h3 {
+        font-size: 28px !important;
+    }
+
+    .impact-info p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* =========================
+       DADOS — 05
+    ========================= */
+
+    .data-section {
+        width: 100% !important;
+        padding: 60px 20px !important;
+    }
+
+    .data-top {
+        width: 100%;
+        display: block !important;
+    }
+
+    .data-heading {
+        width: 100% !important;
+    }
+
+    .data-heading h2 {
+        font-size: 38px !important;
+        line-height: 1.05 !important;
+    }
+
+    .data-intro {
+        width: 100% !important;
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .data-content {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    .data-graph-box,
+    .data-note {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .data-graph {
+        width: 100% !important;
+        overflow-x: auto !important;
+    }
+
+    .data-graph img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+    }
+
+    .data-note {
+        padding: 30px 25px !important;
+    }
+
+    .data-note h3 {
+        font-size: 32px !important;
+    }
+
+
+    /* =========================
+       SOLUÇÕES — 06
+    ========================= */
+
+    .solutions-section {
+        width: 100% !important;
+        padding: 60px 20px !important;
+    }
+
+    .solutions-grid {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
+    .solution-card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .solution-image {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .solution-image img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+        object-fit: cover;
+    }
+
+    .solution-info {
+        width: 100% !important;
+        padding: 25px 20px !important;
+    }
+
+    .solution-info h3 {
+        font-size: 30px !important;
+        line-height: 1.1 !important;
+    }
+
+    .solution-info p {
+        width: 100% !important;
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* =========================
+       REFERÊNCIAS — 07
+    ========================= */
+
+    .sources-section {
+        width: 100% !important;
+        padding: 60px 20px !important;
+    }
+
+    .sources-header {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .sources-header h2 {
+        font-size: 38px !important;
+        line-height: 1.05 !important;
+    }
+
+    .sources-intro {
+        width: 100% !important;
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .sources-list {
+        width: 100% !important;
+    }
+
+
+    /* =========================
+       1º M
+    ========================= */
+
+    .class-section {
+        width: 100% !important;
+        padding: 50px 20px !important;
+        overflow: hidden;
+    }
+
+    .class-team-photo,
+    .class-thanks {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .class-team-photo-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .class-team-image {
+        width: 100% !important;
+    }
+
+    .class-team-image img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+        object-fit: contain !important;
+    }
+
+    .class-thanks {
+        padding: 50px 0 10px !important;
+    }
+
+    .class-thanks h3 {
+        font-size: 34px !important;
+        line-height: 1.08 !important;
+    }
+
+    .class-thanks-description {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+}
