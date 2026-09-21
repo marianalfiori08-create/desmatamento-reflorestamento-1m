@@ -84,10 +84,8 @@ h3 {
 
 .hero {
     position: relative;
-
     min-height: 100vh;
     height: 100vh;
-
     overflow: hidden;
 
     display: flex;
@@ -96,21 +94,57 @@ h3 {
     padding: 0 9%;
 
     color: white;
-
     background: #101510;
 }
+
+/* IMAGEM DA CAPA */
 
 .hero-bg {
     position: absolute;
     inset: 0;
 
-    background-image:
-        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2400&q=90");
+    background-image: url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2400&q=90");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     transform: scale(1.03);
+
+    z-index: 0;
+}
+
+/* ESCURECE A FOTO */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(10, 20, 12, 0.55);
+
+    z-index: 1;
+}
+
+/* TEXTO DA CAPA */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* PARTE INFERIOR */
+
+.hero-bottom {
+    position: absolute;
+    bottom: 35px;
+    left: 9%;
+    right: 9%;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    z-index: 2;
 }
 
 .hero-dark {
@@ -3199,4 +3233,2637 @@ footer p {
     .message-signature {
         grid-column: 2;
     }
+}
+
+/* =========================
+   REFLORESTAMENTO
+========================= */
+
+.reforestation-section {
+    position: relative;
+    background: #f5f5f0;
+    color: #20251f;
+    padding: 120px 8%;
+    overflow: hidden;
+}
+
+.reforestation-header {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.reforestation-header .small-title {
+    margin-bottom: 22px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    color: #607552;
+}
+
+.reforestation-header h2 {
+    margin: 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(52px, 7vw, 88px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.reforestation-header h2 span {
+    color: #607552;
+}
+
+.reforestation-intro {
+    max-width: 650px;
+    margin-top: 32px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+
+    color: #626860;
+}
+
+
+/* GRID */
+
+.reforestation-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 70px 45px;
+}
+
+
+/* CARD */
+
+.reforestation-card {
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e5df;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.reforestation-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 45px rgba(30, 45, 32, 0.10);
+}
+
+
+/* IMAGEM */
+
+.reforestation-image {
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+
+    background: #dfe4dc;
+}
+
+.reforestation-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.7s ease;
+}
+
+.reforestation-card:hover .reforestation-image img {
+    transform: scale(1.04);
+}
+
+
+/* TEXTO */
+
+.reforestation-info {
+    position: relative;
+
+    padding: 32px 34px 38px;
+}
+
+.reforestation-number {
+    margin-bottom: 15px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #8b9e7c;
+}
+
+.reforestation-info h3 {
+    margin: 0 0 18px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #20251f;
+}
+
+.reforestation-info p {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: #626860;
+}
+
+
+/* ÚLTIMO CARD OCUPA A LINHA */
+
+.reforestation-card:last-child {
+    grid-column: 1 / -1;
+
+    max-width: calc(50% - 22px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .reforestation-section {
+        padding: 85px 7%;
+    }
+
+    .reforestation-header {
+        margin-bottom: 50px;
+    }
+
+    .reforestation-header h2 {
+        font-size: 50px;
+        line-height: 0.98;
+        letter-spacing: -1px;
+    }
+
+    .reforestation-intro {
+        margin-top: 25px;
+
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .reforestation-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .reforestation-card {
+        width: 100%;
+    }
+
+    .reforestation-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .reforestation-image {
+        height: 230px;
+    }
+
+    .reforestation-info {
+        padding: 26px 24px 30px;
+    }
+
+    .reforestation-info h3 {
+        font-size: 29px;
+    }
+
+    .reforestation-info p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
+/* =====================================================
+   IMPACTOS AMBIENTAIS
+   ===================================================== */
+
+.impacts-section {
+    position: relative;
+    background: #17231a;
+    color: #ffffff;
+    padding: 120px 8%;
+    overflow: hidden;
+}
+
+.impacts-header {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.impacts-header .small-title {
+    margin-bottom: 22px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    color: #91a77c;
+}
+
+.impacts-header h2 {
+    margin: 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(52px, 7vw, 88px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.impacts-header h2 span {
+    color: #91a77c;
+}
+
+.impacts-intro {
+    max-width: 650px;
+    margin-top: 32px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+
+    color: rgba(255,255,255,0.68);
+}
+
+
+/* GRID */
+
+.impacts-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 70px 45px;
+}
+
+
+/* CARD */
+
+.impact-card {
+    display: flex;
+    flex-direction: column;
+
+    background: #202c22;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,0.18);
+}
+
+
+/* FOTO */
+
+.impact-image {
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+
+    background: #111a14;
+}
+
+.impact-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.7s ease;
+}
+
+.impact-card:hover .impact-image img {
+    transform: scale(1.04);
+}
+
+
+/* TEXTO */
+
+.impact-info {
+    padding: 32px 34px 38px;
+}
+
+.impact-number {
+    margin-bottom: 15px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #91a77c;
+}
+
+.impact-info h3 {
+    margin: 0 0 18px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+.impact-info p {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: rgba(255,255,255,0.68);
+}
+
+
+/* ÚLTIMO CARD */
+
+.impact-card:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 22px);
+}
+
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .impacts-section {
+        padding: 85px 7%;
+    }
+
+    .impacts-header {
+        margin-bottom: 50px;
+    }
+
+    .impacts-header h2 {
+        font-size: 50px;
+        line-height: 0.98;
+        letter-spacing: -1px;
+    }
+
+    .impacts-intro {
+        margin-top: 25px;
+
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .impacts-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .impact-card {
+        width: 100%;
+    }
+
+    .impact-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .impact-image {
+        height: 230px;
+    }
+
+    .impact-info {
+        padding: 26px 24px 30px;
+    }
+
+    .impact-info h3 {
+        font-size: 29px;
+    }
+
+    .impact-info p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
+/* =====================================================
+   IMPACTOS AMBIENTAIS — FOTOS
+   ===================================================== */
+
+.impacts-section {
+    position: relative;
+    background: #17231a;
+    color: #fff;
+    padding: 120px 8%;
+    overflow: hidden;
+}
+
+.impacts-header {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.impacts-header .small-title {
+    margin-bottom: 22px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #91a77c;
+}
+
+.impacts-header h2 {
+    margin: 0;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(52px, 7vw, 88px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.impacts-header h2 span {
+    color: #91a77c;
+}
+
+.impacts-intro {
+    max-width: 650px;
+    margin-top: 32px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.68);
+}
+
+
+/* GRID DOS CARDS */
+
+.impacts-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 45px;
+}
+
+
+/* CARD */
+
+.impact-card {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #202c22;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+}
+
+
+/* =====================================================
+   FOTOS
+   ===================================================== */
+
+.impact-image {
+    position: relative;
+
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+
+    background: #111a14;
+}
+
+.impact-image img {
+    display: block;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 0;
+
+    transition: transform 0.7s ease;
+}
+
+.impact-card:hover .impact-image img {
+    transform: scale(1.04);
+}
+
+
+/* TEXTO */
+
+.impact-info {
+    padding: 32px 34px 38px;
+}
+
+.impact-number {
+    margin-bottom: 15px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #91a77c;
+}
+
+.impact-info h3 {
+    margin: 0 0 18px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #fff;
+}
+
+.impact-info p {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: rgba(255,255,255,0.68);
+}
+
+
+/* ÚLTIMO CARD */
+
+.impact-card:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 22.5px);
+}
+
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .impacts-section {
+        padding: 85px 7%;
+    }
+
+    .impacts-header {
+        margin-bottom: 50px;
+    }
+
+    .impacts-header h2 {
+        font-size: 50px;
+        line-height: 0.98;
+        letter-spacing: -1px;
+    }
+
+    .impacts-intro {
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .impacts-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .impact-card {
+        width: 100%;
+    }
+
+    .impact-card:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .impact-image {
+        width: 100%;
+        height: 230px;
+    }
+
+    .impact-image img {
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .impact-info {
+        padding: 26px 24px 30px;
+    }
+
+    .impact-info h3 {
+        font-size: 29px;
+    }
+
+    .impact-info p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+/* GRÁFICO */
+
+#dados .data-box {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#dados .data-graph {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#dados .data-graph img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+#dados .data-box small {
+    display: block;
+    max-width: 850px;
+    margin: 12px auto 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    color: #777;
+}
+/* =========================
+   DADOS — ESTILO DO SITE
+========================= */
+
+#dados {
+    background: #f5f5f0 !important;
+    color: #20251f !important;
+    padding: 120px 8%;
+}
+
+#dados .small-title {
+    color: #607552 !important;
+}
+
+#dados h2 {
+    color: #20251f !important;
+    font-family: "DM Serif Display", serif;
+}
+
+#dados h2 span {
+    color: #607552 !important;
+}
+
+#dados > p:not(.small-title) {
+    color: #626860 !important;
+}
+
+/* QUADRANTE BEGE DO GRÁFICO */
+#dados .data-box {
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    padding: 35px;
+
+    background: #ebe9df !important;
+    border: 1px solid #d9d8ce;
+
+    box-sizing: border-box;
+}
+
+/* ÁREA DO GRÁFICO */
+#dados .data-graph {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background: #ebe9df;
+
+    overflow: hidden;
+}
+
+/* IMAGEM */
+#dados .data-graph img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+/* FONTE */
+#dados .data-box small {
+    display: block;
+
+    margin-top: 18px;
+
+    text-align: center;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+
+    color: #607552 !important;
+}
+
+
+/* CELULAR */
+@media (max-width: 700px) {
+
+    #dados {
+        padding: 85px 7%;
+    }
+
+    #dados .data-box {
+        margin-top: 35px;
+        padding: 18px;
+    }
+
+    #dados .data-graph {
+        width: 100%;
+    }
+
+    #dados .data-graph img {
+        width: 100%;
+        height: auto;
+    }
+
+    #dados .data-box small {
+        font-size: 10px;
+        margin-top: 14px;
+    }
+}
+/* =====================================
+   SOLUÇÕES
+===================================== */
+
+.solutions-section {
+    position: relative;
+    background: #f5f5f0;
+    color: #20251f;
+    padding: 120px 8%;
+    overflow: hidden;
+}
+
+.solutions-header {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.solutions-header .small-title {
+    margin-bottom: 22px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    color: #607552;
+}
+
+.solutions-header h2 {
+    margin: 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(52px, 7vw, 88px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -2px;
+
+    color: #20251f;
+}
+
+.solutions-header h2 span {
+    color: #607552;
+}
+
+.solutions-intro {
+    max-width: 680px;
+    margin-top: 32px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+
+    color: #626860;
+}
+
+
+/* GRID */
+
+.solutions-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 65px 45px;
+}
+
+
+/* CARD */
+
+.solution-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e2dc;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 50px rgba(30, 45, 32, 0.10);
+}
+
+
+/* IMAGEM */
+
+.solution-image {
+    width: 100%;
+    height: 330px;
+
+    overflow: hidden;
+
+    background: #dfe4dc;
+}
+
+.solution-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.7s ease;
+}
+
+.solution-card:hover .solution-image img {
+    transform: scale(1.04);
+}
+.solution-info {
+    padding: 34px 36px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.solution-number {
+    display: block;
+    margin-bottom: 16px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8b9e7c;
+}
+
+.solution-info h3 {
+    margin: 0 0 20px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.05;
+
+    color: #20251f;
+}
+
+.solution-info p {
+    display: block;
+    width: 100%;
+
+    margin: 0 0 18px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #626860;
+}
+
+.solution-info p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* TODOS OS CARDS EM DUAS COLUNAS */
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 65px 45px;
+}
+
+.solution-card {
+    width: 100%;
+    min-width: 0;
+}
+
+.solution-card:last-child {
+    grid-column: auto;
+    max-width: none;
+}
+
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media (max-width: 700px) {
+
+    .solutions-section {
+        padding: 85px 7%;
+    }
+
+    .solutions-header {
+        margin-bottom: 50px;
+    }
+
+    .solutions-header h2 {
+        font-size: 50px;
+        line-height: 0.98;
+        letter-spacing: -1px;
+    }
+
+    .solutions-intro {
+        margin-top: 25px;
+
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .solutions-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .solution-card {
+        width: 100%;
+    }
+
+    .solution-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .solution-image {
+        height: 240px;
+    }
+
+    .solution-info {
+        padding: 27px 24px 32px;
+    }
+
+    .solution-info h3 {
+        font-size: 30px;
+    }
+
+    .solution-info p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+}
+
+/* =========================================
+   TRANSIÇÃO LIMPA ENTRE AS SEÇÕES
+========================================= */
+
+/* Remove faixas e pseudo-elementos */
+.reforestation-section::before,
+.reforestation-section::after,
+.impacts-section::before,
+.impacts-section::after,
+.class-section::before,
+.class-section::after,
+.solutions-section::before,
+.solutions-section::after,
+#dados::before,
+#dados::after {
+    content: none !important;
+}
+
+/* Cores das seções */
+.reforestation-section {
+    background: #f5f5f0 !important;
+}
+
+#dados {
+    background: #f2f1eb !important;
+}
+
+.solutions-section {
+    background: #f2f1eb !important;
+}
+
+.impacts-section {
+    background: #26362a !important;
+}
+
+.class-section {
+    background: #26362a !important;
+}
+
+/* Remove linhas/bordas entre as seções */
+.reforestation-section,
+#dados,
+.solutions-section,
+.impacts-section,
+.class-section {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+
+/* CORES MAIS SUAVES */
+
+.reforestation-section {
+    background: #f5f5f0 !important;
+}
+
+#dados {
+    background: #f2f1eb !important;
+}
+
+.solutions-section {
+    background: #f2f1eb !important;
+}
+
+.impacts-section {
+    background: #26362a !important;
+}
+
+.class-section {
+    background: #26362a !important;
+}
+
+
+/* REMOVE BORDAS QUE ESTÃO CRIANDO LINHAS */
+
+.reforestation-section,
+#dados,
+.solutions-section,
+.impacts-section,
+.class-section {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+/* =========================================
+   BORDAS DAS SEÇÕES BEGES
+========================================= */
+
+/* Seções beges */
+.reforestation-section,
+.solutions-section,
+#dados {
+    border-top: 1px solid #e5e3d8 !important;
+    border-bottom: 1px solid #e5e3d8 !important;
+}
+
+/* Remove qualquer borda verde antiga */
+.reforestation-section,
+.solutions-section,
+#dados {
+    box-shadow: none !important;
+}
+
+
+/* Seções verdes */
+.impacts-section,
+.class-section {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+/* =========================================
+   CORREÇÃO DEFINITIVA — SEÇÃO DADOS
+========================================= */
+
+#dados {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 100px 8% 120px !important;
+
+    background: #f5f5f0 !important;
+    color: #20251f !important;
+
+    border: none !important;
+    box-shadow: none !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* conteúdo da seção */
+
+#dados > .small-title,
+#dados > h2,
+#dados > p {
+    max-width: 1150px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* título */
+
+#dados > h2 {
+    margin-top: 0 !important;
+    margin-bottom: 25px !important;
+
+    color: #20251f !important;
+}
+
+#dados > h2 span {
+    color: #607552 !important;
+}
+
+
+/* texto */
+
+#dados > p:not(.small-title) {
+    color: #626860 !important;
+
+    margin-top: 25px !important;
+    margin-bottom: 0 !important;
+
+    line-height: 1.7 !important;
+}
+
+
+/* quadrante do gráfico */
+
+#dados .data-box {
+    width: 100% !important;
+    max-width: 1150px !important;
+
+    margin: 55px auto 0 !important;
+    padding: 35px !important;
+
+    background: #ebe9df !important;
+
+    border: 1px solid #dedcd1 !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* gráfico */
+
+#dados .data-graph {
+    width: 100% !important;
+    max-width: 900px !important;
+
+    margin: 0 auto !important;
+
+    overflow: hidden !important;
+}
+
+#dados .data-graph img {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 0 auto !important;
+
+    object-fit: contain !important;
+}
+
+
+/* fonte */
+
+#dados .data-box small {
+    display: block !important;
+
+    margin-top: 18px !important;
+
+    text-align: center !important;
+
+    color: #607552 !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 11px !important;
+}
+
+
+/* =========================================
+   COMPUTADOR
+========================================= */
+
+@media (min-width: 1000px) {
+
+    #dados {
+        padding-left: 8% !important;
+        padding-right: 8% !important;
+    }
+
+    #dados > h2 {
+        font-size: clamp(60px, 6vw, 88px) !important;
+    }
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    #dados {
+        padding: 75px 7% 85px !important;
+    }
+
+    #dados .data-box {
+        margin-top: 35px !important;
+        padding: 18px !important;
+    }
+
+    #dados .data-graph {
+        width: 100% !important;
+    }
+}
+/* =====================================================
+   DADOS — CORREÇÃO COMPLETA
+===================================================== */
+
+#dados.section.light {
+    position: relative;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 110px 7% 130px !important;
+
+    box-sizing: border-box;
+
+    background: #f5f4ee !important;
+
+    color: #20251f !important;
+
+    border: none !important;
+    outline: none !important;
+
+    box-shadow: none !important;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   TRANSIÇÃO SUAVE DO VERDE PARA O BEGE
+===================================================== */
+
+#dados.section.light::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 55px;
+
+    background: linear-gradient(
+        to bottom,
+        #26362a 0%,
+        #344337 20%,
+        #d8d9cf 65%,
+        #f5f4ee 100%
+    );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+#dados .dados-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   PEQUENO TÍTULO
+===================================================== */
+
+#dados .small-title {
+    margin: 0 0 24px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #607552 !important;
+}
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL
+===================================================== */
+
+#dados h2 {
+    margin: 0;
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(58px, 7vw, 90px);
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+
+    color: #20251f !important;
+}
+
+#dados h2 span {
+    color: #607552 !important;
+}
+
+
+/* =====================================================
+   TEXTO
+===================================================== */
+
+#dados .dados-intro {
+    max-width: 800px;
+
+    margin: 30px 0 0;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    color: #626860 !important;
+}
+
+
+/* =====================================================
+   QUADRANTE DO GRÁFICO
+===================================================== */
+
+#dados .data-box {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 55px 0 0;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background: #ebe9df !important;
+
+    border: 1px solid #d9d7cb !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =====================================================
+   GRÁFICO
+===================================================== */
+
+#dados .data-graph {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+#dados .data-graph img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   FONTE DO GRÁFICO
+===================================================== */
+
+#dados .data-box small {
+    display: block;
+
+    margin-top: 18px;
+
+    text-align: center;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 0.5px;
+
+    color: #607552 !important;
+}
+
+
+/* =====================================================
+   GARANTE QUE NÃO EXISTAM BORDAS VERDES
+===================================================== */
+
+#dados,
+#dados.section,
+#dados.section.light,
+#dados .data-box {
+    border-top-color: #d9d7cb !important;
+    border-right-color: #d9d7cb !important;
+    border-bottom-color: #d9d7cb !important;
+    border-left-color: #d9d7cb !important;
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 700px) {
+
+    #dados.section.light {
+        padding: 80px 7% 90px !important;
+    }
+
+    #dados.section.light::before {
+        height: 40px;
+    }
+
+    #dados h2 {
+        font-size: 50px;
+        line-height: 0.98;
+        letter-spacing: -1px;
+    }
+
+    #dados .dados-intro {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    #dados .data-box {
+        margin-top: 35px;
+
+        padding: 18px;
+    }
+
+    #dados .data-graph {
+        width: 100%;
+    }
+}
+/* =========================================
+   FOTO DA TURMA + EQUIPE
+========================================= */
+
+.class-team-photo {
+    width: 100%;
+    max-width: 1150px;
+    margin: 90px auto 0;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.class-team-photo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+
+    color: #91a77c;
+}
+
+.class-team-image {
+    width: 100%;
+    overflow: hidden;
+    background: #27342b;
+}
+
+.class-team-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.class-team-image:hover img {
+    transform: scale(1.015);
+}
+
+.class-team-photo > p {
+    margin: 14px 0 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .class-team-photo {
+        margin-top: 65px;
+        padding-top: 22px;
+    }
+
+    .class-team-photo-header {
+        font-size: 9px;
+        letter-spacing: 1.3px;
+    }
+
+    .class-team-image {
+        width: 100%;
+    }
+
+    .class-team-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    .class-team-photo > p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+}
+/* =========================================
+   AGRADECIMENTO — 1º M
+========================================= */
+
+.class-thanks {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 55px;
+
+    max-width: 1000px;
+    margin: 85px auto 0;
+    padding: 55px 0 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* NÚMERO */
+
+.class-thanks-number {
+    font-family: "DM Serif Display", serif;
+    font-size: 72px;
+    line-height: 0.85;
+    color: rgba(255, 255, 255, 0.12);
+
+    letter-spacing: -3px;
+}
+
+/* TEXTO */
+
+.class-thanks-text {
+    max-width: 680px;
+}
+
+.class-thanks-label {
+    margin: 0 0 18px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #91a77c;
+}
+
+.class-thanks h3 {
+    margin: 0 0 25px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -1px;
+
+    color: #ffffff;
+}
+
+.class-thanks h3 span {
+    color: #91a77c;
+}
+
+.class-thanks-description {
+    max-width: 620px;
+    margin: 0 0 28px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.85;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.class-thanks-final {
+    margin: 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 22px;
+    font-style: italic;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* DETALHE */
+
+.class-thanks::after {
+    content: "2026";
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .class-thanks {
+        grid-template-columns: 1fr;
+        gap: 22px;
+
+        margin-top: 60px;
+        padding-top: 35px;
+    }
+
+    .class-thanks-number {
+        font-size: 52px;
+    }
+
+    .class-thanks h3 {
+        font-size: 36px;
+        line-height: 1.05;
+    }
+
+    .class-thanks-description {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .class-thanks-final {
+        font-size: 20px;
+    }
+
+}
+/* =========================================
+   FONTES — EDITORIAL
+========================================= */
+
+.sources-section {
+    position: relative;
+    padding: 120px 9% 55px;
+    background: #f2f1eb;
+    color: #20251f;
+}
+
+
+/* CABEÇALHO */
+
+.sources-header {
+    max-width: 1150px;
+    margin: 0 auto 80px;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 55px;
+
+    padding-bottom: 45px;
+    border-bottom: 1px solid #d8d6cc;
+}
+
+.sources-index {
+    font-family: "DM Serif Display", serif;
+    font-size: 72px;
+    line-height: .85;
+    letter-spacing: -3px;
+    color: #d7d8cd;
+}
+
+.sources-section .small-title {
+    margin: 0 0 20px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #5d7357;
+}
+
+.sources-section h2 {
+    margin: 0 0 25px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1.5px;
+
+    color: #20251f;
+}
+
+.sources-section h2 span {
+    color: #6f8468;
+}
+
+.sources-intro {
+    max-width: 570px;
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #6b7069;
+}
+
+
+/* LISTA */
+
+.sources-list {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.source-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 40px;
+    align-items: center;
+
+    padding: 27px 0;
+
+    border-bottom: 1px solid #d8d6cc;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition:
+        padding-left .3s ease,
+        background .3s ease;
+}
+
+.source-item:first-child {
+    border-top: 1px solid #d8d6cc;
+}
+
+.source-number {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #9a9e94;
+}
+
+.source-info h3 {
+    margin: 0 0 5px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 27px;
+    font-weight: 400;
+
+    color: #20251f;
+}
+
+.source-info p {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #777b74;
+}
+
+.source-arrow {
+    font-family: "DM Sans", sans-serif;
+    font-size: 19px;
+
+    color: #6f8468;
+
+    text-align: right;
+
+    transition: transform .3s ease;
+}
+
+.source-item:hover {
+    padding-left: 12px;
+}
+
+.source-item:hover .source-arrow {
+    transform: translate(4px, -4px);
+}
+
+
+/* RODAPÉ */
+
+.sources-footer {
+    max-width: 1150px;
+    margin: 80px auto 0;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #d8d6cc;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+
+    color: #92968d;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .sources-section {
+        padding: 80px 7% 40px;
+    }
+
+    .sources-header {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 55px;
+        padding-bottom: 35px;
+    }
+
+    .sources-index {
+        font-size: 52px;
+    }
+
+    .sources-section h2 {
+        font-size: 42px;
+    }
+
+    .sources-intro {
+        font-size: 13px;
+    }
+
+    .source-item {
+        grid-template-columns: 40px 1fr 25px;
+        padding: 22px 0;
+    }
+
+    .source-info h3 {
+        font-size: 23px;
+    }
+
+    .source-info p {
+        font-size: 11px;
+        padding-right: 10px;
+    }
+
+    .source-arrow {
+        font-size: 16px;
+    }
+
+    .sources-footer {
+        margin-top: 55px;
+        gap: 12px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+/* =========================================
+   05 — DADOS
+========================================= */
+
+.data-section {
+    position: relative;
+
+    padding: 120px 9% 130px;
+
+    background: #f2f1eb;
+    color: #27342b;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.data-top {
+    max-width: 1150px;
+    margin: 0 auto 75px;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 55px;
+
+    padding-bottom: 50px;
+
+    border-bottom: 1px solid #d7d5ca;
+}
+
+.data-number {
+    font-family: "DM Serif Display", serif;
+    font-size: 76px;
+    line-height: .8;
+
+    letter-spacing: -4px;
+
+    color: #d6d7cc;
+}
+
+.data-heading .small-title {
+    margin: 0 0 18px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #63795e;
+}
+
+.data-heading h2 {
+    margin: 0 0 25px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 60px;
+    font-weight: 400;
+
+    line-height: .98;
+    letter-spacing: -1.5px;
+
+    color: #26362a;
+}
+
+.data-heading h2 span {
+    color: #72866c;
+}
+
+.data-intro {
+    max-width: 560px;
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #6b7069;
+}
+
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.data-content {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 55px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   GRÁFICO
+========================================= */
+
+.data-graph-box {
+    width: 100%;
+
+    background: #e8e5da;
+
+    border: 1px solid #d4d1c5;
+}
+
+.data-graph-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid #d4d1c5;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #6b7467;
+}
+
+.data-graph {
+    width: 100%;
+    padding: 28px;
+}
+
+.data-graph img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    background: #e8e5da;
+}
+
+.data-graph-caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 15px 22px;
+
+    border-top: 1px solid #d4d1c5;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    line-height: 1.5;
+
+    color: #858981;
+}
+
+
+/* =========================================
+   TEXTO AO LADO
+========================================= */
+
+.data-note {
+    padding-top: 8px;
+}
+
+
+.data-note h3 {
+    margin: 0 0 25px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 34px;
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    color: #26362a;
+}
+
+.data-note p {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+
+    color: #70756e;
+}
+
+.data-line {
+    width: 45px;
+    height: 1px;
+
+    margin: 32px 0 20px;
+
+    background: #a8afa2;
+}
+
+.data-note-small {
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #72866c;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 800px) {
+
+    .data-section {
+        padding: 80px 7% 90px;
+    }
+
+    .data-top {
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        margin-bottom: 50px;
+        padding-bottom: 35px;
+    }
+
+    .data-number {
+        font-size: 55px;
+    }
+
+    .data-heading h2 {
+        font-size: 43px;
+    }
+
+    .data-intro {
+        font-size: 13px;
+    }
+
+    .data-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .data-graph {
+        padding: 15px;
+    }
+
+    .data-graph-top {
+        padding: 14px 15px;
+        font-size: 8px;
+    }
+
+    .data-graph-caption {
+        flex-direction: column;
+        gap: 5px;
+
+        padding: 13px 15px;
+    }
+
+    .data-note {
+        padding-top: 0;
+    }
+
+    .data-note h3 {
+        font-size: 32px;
+    }
+
+}
+.impacts-header h2 {
+    margin-bottom: 30px !important;
+}
+
+.impacts-header > p:last-child {
+    margin-top: 0 !important;
+    line-height: 1.8 !important;
+}
+.impacts-header {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 70px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+.impacts-text {
+    min-width: 0;
+}
+
+.impacts-text .small-title {
+    margin-bottom: 22px;
+}
+
+.impacts-text h2 {
+    margin: 0 0 30px;
+    line-height: 1.05;
+}
+
+.impacts-text h2 span {
+    display: inline;
+}
+
+.impacts-text > p:last-child {
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.8;
+}
+/* =========================
+   IMPACTOS — AJUSTE FINAL
+========================= */
+
+.impacts-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 70px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.impacts-header .small-title {
+    margin: 0 0 22px;
+}
+
+.impacts-header h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    line-height: 1.05;
+}
+
+.impacts-header h2 span {
+    display: inline;
+}
+
+.impacts-description {
+    max-width: 650px;
+    margin: 0;
+    line-height: 1.8;
+}
+
+
+/* CARDS */
+
+.impacts-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 55px 45px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.impact-card {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.impact-image {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+
+.impact-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.impact-content {
+    padding: 25px 0 10px;
+}
+
+.impact-number {
+    display: block;
+    margin-bottom: 12px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+}
+
+.impact-content h3 {
+    margin: 0 0 15px;
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.impact-content p {
+    max-width: 500px;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .impacts-header {
+        margin-bottom: 50px;
+    }
+
+    .impacts-header h2 {
+        font-size: 40px;
+        line-height: 1.05;
+    }
+
+    .impacts-description {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .impacts-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .impact-image {
+        height: 280px;
+    }
+
+    .impact-content h3 {
+        font-size: 29px;
+    }
+
+}
+/* =========================
+   DADOS — FUNDO BRANCO
+========================= */
+
+.data-section {
+    background: #ffffff !important;
+    color: #20251f;
+}
+
+.data-section .data-number,
+.data-section .small-title,
+.data-section h2,
+.data-section h2 span {
+    color: #20251f;
+}
+
+.data-section .data-intro {
+    color: #626860;
+}
+
+.data-graph-box {
+    background: #ffffff !important;
+    border: 1px solid #d9d6ca !important;
+}
+
+.data-graph-top {
+    color: #20251f;
+    border-bottom: 1px solid #d9d6ca !important;
+}
+
+.data-graph-caption {
+    color: #626860;
+    border-top: 1px solid #d9d6ca !important;
+}
+
+.data-note {
+    background: #ffffff !important;
+    border: 1px solid #d9d6ca !important;
+}
+
+.data-note h3 {
+    color: #20251f;
+}
+
+.data-note p {
+    color: #626860;
+}
+
+.data-line {
+    background: #20251f !important;
+}
+
+.data-note-small {
+    color: #626860;
+}
+.logo-turma {
+    color: #5f7655 !important;
+}
+/* =================================
+   SEÇÃO DO 1º M — VERDE
+================================= */
+
+.class-section {
+    background: #26362a !important;
+    color: #ffffff !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* FOTO DA TURMA */
+
+.class-team-photo {
+    background: #26362a !important;
+    color: #ffffff !important;
+}
+
+.class-team-photo-header {
+    color: #ffffff !important;
+    border-color: rgba(255,255,255,0.25) !important;
+}
+
+.class-team-photo p {
+    color: #d9e2da !important;
+}
+
+.class-team-image {
+    background: #26362a !important;
+}
+
+
+/* AGRADECIMENTO À TURMA */
+/* FUNDO GERAL DA SEÇÃO 1º M */
+
+.class-section {
+    background: #26362a !important;
+    width: 100% !important;
+    color: #ffffff !important;
+}
+
+/* FOTO + ÁREA DA FOTO */
+
+.class-section .class-team-photo {
+    background: #26362a !important;
+    color: #ffffff !important;
+}
+
+/* AGRADECIMENTO */
+
+.class-section .class-thanks {
+    background: #26362a !important;
+    color: #ffffff !important;
+}
+.class-thanks {
+    background: #26362a !important;
+    color: #ffffff !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.class-thanks-number {
+    color: #ffffff !important;
+}
+
+.class-thanks-label {
+    color: #d9e2da !important;
+}
+
+.class-thanks h3 {
+    color: #ffffff !important;
+}
+
+.class-thanks h3 span {
+    color: #b8cbb9 !important;
+}
+
+.class-thanks-description {
+    color: #d9e2da !important;
+}
+
+.class-thanks-final {
+    color: #ffffff !important;
 }
