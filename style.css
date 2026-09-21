@@ -4611,25 +4611,7 @@ footer p {
 ===================================================== */
 
 #dados.section.light::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    right: 0;
-
-    height: 55px;
-
-    background: linear-gradient(
-        to bottom,
-        #26362a 0%,
-        #344337 20%,
-        #d8d9cf 65%,
-        #f5f4ee 100%
-    );
-
-    pointer-events: none;
+    content: none !important;
 }
 
 
@@ -6339,5 +6321,31 @@ footer p {
     .class-thanks-final {
         text-align: center !important;
         margin: 25px auto 0 !important;
+    }
+}
+/* =========================================
+   CORREÇÃO FINAL — DADOS NO CELULAR
+========================================= */
+
+#dados,
+#dados.section,
+#dados.section.light {
+    background: #f5f4ee !important;
+}
+
+#dados.section.light::before,
+#dados.section.light::after {
+    content: none !important;
+    display: none !important;
+}
+
+@media (max-width: 700px) {
+    #dados,
+    #dados.section,
+    #dados.section.light {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        background: #f5f4ee !important;
     }
 }
