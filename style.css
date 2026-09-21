@@ -6349,3 +6349,59 @@ footer p {
         background: #f5f4ee !important;
     }
 }
+/* =========================================
+   CORREÇÃO DEFINITIVA — FUNDO DADOS
+========================================= */
+
+#dados.section.light {
+    background: #f5f4ee !important;
+}
+
+/* REMOVE COMPLETAMENTE A FAIXA VERDE */
+#dados.section.light::before {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+}
+
+/* Remove qualquer borda verde */
+#dados.section.light {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+    #dados.section.light {
+        background: #f5f4ee !important;
+    }
+
+    #dados.section.light::before {
+        content: none !important;
+        display: none !important;
+        height: 0 !important;
+    }
+}
+/* CORREÇÃO FUNDO BEGE NO CELULAR */
+
+#dados.section.light {
+    background: #f5f4ee !important;
+}
+
+#dados.section.light::before {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+}
+
+@media (max-width: 700px) {
+    #dados.section.light {
+        background: #f5f4ee !important;
+    }
+
+    #dados.section.light::before {
+        content: none !important;
+        display: none !important;
+        height: 0 !important;
+    }
+}
