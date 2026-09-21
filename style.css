@@ -6237,3 +6237,107 @@ footer p {
         margin-right: auto !important;
     }
 }
+/* =========================================
+   1º M — CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* FUNDO VERDE DE TODA A ÁREA */
+    .class-section {
+        background: #26362a !important;
+        width: 100% !important;
+        padding: 35px 20px 60px !important;
+        text-align: center !important;
+    }
+
+    /* FOTO */
+    .class-team-photo {
+        width: 100% !important;
+        background: #26362a !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .class-team-photo-header {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .class-team-image {
+        width: 100% !important;
+        background: #26362a !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+    }
+
+    .class-team-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        margin: 0 auto !important;
+    }
+
+    .class-team-photo > p {
+        text-align: center !important;
+        color: #d9e2da !important;
+        margin: 12px auto 0 !important;
+    }
+
+
+    /* ESPAÇO VERDE ENTRE FOTO E TEXTO */
+    .class-thanks {
+        width: 100% !important;
+        background: #26362a !important;
+        color: #ffffff !important;
+        padding: 55px 10px 10px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+
+    /* TODOS OS TEXTOS CENTRALIZADOS */
+
+    .class-thanks-number {
+        text-align: center !important;
+        margin: 0 auto 20px !important;
+    }
+
+    .class-thanks-text {
+        width: 100% !important;
+        max-width: 500px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .class-thanks-label {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .class-thanks h3 {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-size: 32px !important;
+        line-height: 1.1 !important;
+    }
+
+    .class-thanks-description {
+        max-width: 480px !important;
+        margin: 25px auto !important;
+        text-align: center !important;
+        line-height: 1.7 !important;
+    }
+
+    .class-thanks-final {
+        text-align: center !important;
+        margin: 25px auto 0 !important;
+    }
+}
