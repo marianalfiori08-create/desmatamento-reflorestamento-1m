@@ -7874,3 +7874,22 @@ footer p {
     object-position: center top !important;
     display: block !important;
 }
+/* CENTRALIZAR AGRADECIMENTO ÀS PROFESSORAS */
+.dedication-message {
+    text-align: center !important;
+}
+
+.dedication-message p,
+.dedication-message h2,
+.dedication-message h3 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+/* VERDE DO 1º M • FLORESTAS */
+.site-header .brand,
+.site-header .logo,
+.site-header .brand-name,
+.site-header h1 {
+    color: #71875d !important;
+}
