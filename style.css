@@ -6451,3 +6451,1413 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
+/* =========================================================
+   PROFESSORAS — NOVO DESIGN
+   ========================================================= */
+
+.dedication {
+    width: 100%;
+    background: #f4f0e8;
+    color: #20251f;
+    padding: 120px 7%;
+    overflow: hidden;
+}
+
+.dedication-content {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* ---------- CABEÇALHO ---------- */
+
+.dedication-header {
+    max-width: 850px;
+    margin: 0 auto 90px;
+}
+
+.dedication-header .small-title {
+    margin-bottom: 25px;
+}
+
+.dedication-header h2 {
+    margin: 0;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(50px, 6vw, 82px);
+    font-weight: 400;
+    line-height: .95;
+    letter-spacing: -2px;
+}
+
+.dedication-header h2 span {
+    color: #526453;
+}
+
+.dedication-intro {
+    max-width: 650px;
+    margin: 30px 0 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #626860;
+}
+
+
+/* ---------- PROFESSORAS ---------- */
+
+.teachers-editorial {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 45px;
+    border-top: 1px solid #d5d9d1;
+    padding-top: 45px;
+}
+
+.teacher-editorial {
+    width: 100%;
+    min-width: 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d5d9d1;
+}
+
+
+/* topo do card */
+
+.teacher-editorial-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.teacher-number {
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #697268;
+}
+
+.teacher-star {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #b8c0b6;
+    border-radius: 50%;
+
+    color: #526453;
+    font-size: 15px;
+}
+
+
+/* ---------- FOTO ---------- */
+
+.teacher-editorial-photo {
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    background: #dfe3dc;
+    margin-bottom: 30px;
+}
+
+.teacher-editorial-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform .5s ease;
+}
+
+.teacher-editorial:hover .teacher-editorial-photo img {
+    transform: scale(1.03);
+}
+
+
+/* ---------- INFORMAÇÕES ---------- */
+
+.teacher-editorial-info {
+    width: 100%;
+}
+
+.teacher-editorial-info h3 {
+    margin: 0 0 12px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: .95;
+    letter-spacing: -1px;
+
+    color: #20251f;
+}
+
+.teacher-role {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+
+    color: #687166;
+}
+
+.teacher-editorial-line {
+    width: 45px;
+    height: 1px;
+
+    margin: 22px 0;
+
+    background: #526453;
+}
+
+.teacher-description {
+    max-width: 340px;
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: #626860;
+}
+
+
+/* ---------- MENSAGEM FINAL ---------- */
+
+.dedication-message {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 100px auto 0;
+
+    text-align: center;
+}
+
+.message-line {
+    display: block;
+
+    width: 55px;
+    height: 1px;
+
+    margin: 0 auto 30px;
+
+    background: #526453;
+}
+
+.dedication-message p {
+    margin: 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 1.35;
+
+    color: #20251f;
+}
+
+.message-signature {
+    display: block;
+
+    margin-top: 25px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #687166;
+}
+
+
+/* =========================================================
+   1º M — TURMA
+   ========================================================= */
+
+.class-section {
+    width: 100%;
+    background: #26362a;
+    color: white;
+
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* FOTO */
+
+.class-team-photo {
+    width: 100%;
+    background: #26362a;
+    padding: 0;
+    margin: 0;
+}
+
+.class-team-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.class-team-image img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.class-team-photo > p {
+    margin: 18px 7% 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+
+    color: #cbd5cc;
+}
+
+
+/* TEXTO DA TURMA */
+
+.class-thanks {
+    width: 100%;
+    background: #26362a;
+    color: white;
+
+    padding: 110px 7% 130px;
+}
+
+.class-thanks-text {
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.class-thanks-label {
+    margin: 0 0 25px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #b7c7ba;
+}
+
+.class-thanks h3 {
+    margin: 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(45px, 6vw, 78px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -2px;
+}
+
+.class-thanks h3 span {
+    color: #a9c0ac;
+}
+
+.class-thanks-description {
+    max-width: 650px;
+
+    margin: 35px auto 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #d5ddd6;
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* ---------- PROFESSORAS ---------- */
+
+    .dedication {
+        padding: 75px 20px 80px !important;
+    }
+
+    .dedication-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .dedication-header {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 55px !important;
+        text-align: center !important;
+    }
+
+    .dedication-header .small-title {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    .dedication-header h2 {
+        font-size: 43px !important;
+        line-height: .98 !important;
+        letter-spacing: -1.5px !important;
+        text-align: center !important;
+    }
+
+    .dedication-intro {
+        width: 100% !important;
+        max-width: 400px !important;
+        margin: 25px auto 0 !important;
+
+        text-align: center !important;
+
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* LISTA DAS PROFESSORAS */
+
+    .teachers-editorial {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 0 !important;
+
+        border-top: 1px solid #d5d9d1 !important;
+        padding-top: 35px !important;
+    }
+
+
+    /* CADA PROFESSORA */
+
+    .teacher-editorial {
+        width: 100% !important;
+        max-width: 400px !important;
+
+        margin: 0 auto !important;
+        padding: 0 0 55px !important;
+
+        border-bottom: 1px solid #d5d9d1 !important;
+
+        text-align: center !important;
+    }
+
+    .teacher-editorial + .teacher-editorial {
+        padding-top: 55px !important;
+    }
+
+    .teacher-editorial:last-child {
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+    }
+
+
+    /* TOPO */
+
+    .teacher-editorial-top {
+        width: 100% !important;
+
+        display: flex !important;
+
+        justify-content: space-between !important;
+        align-items: center !important;
+
+        margin-bottom: 22px !important;
+    }
+
+    .teacher-number {
+        font-size: 10px !important;
+        letter-spacing: 2px !important;
+    }
+
+    .teacher-star {
+        width: 36px !important;
+        height: 36px !important;
+
+        font-size: 14px !important;
+    }
+
+
+    /* FOTO */
+
+    .teacher-editorial-photo {
+        width: 100% !important;
+        max-width: 330px !important;
+
+        height: 360px !important;
+
+        margin: 0 auto 28px !important;
+
+        overflow: hidden !important;
+    }
+
+    .teacher-editorial-photo img {
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
+
+    /* TEXTO */
+
+    .teacher-editorial-info {
+        width: 100% !important;
+
+        text-align: center !important;
+    }
+
+    .teacher-editorial-info h3 {
+        margin: 0 0 12px !important;
+
+        font-size: 38px !important;
+        line-height: .95 !important;
+
+        text-align: center !important;
+    }
+
+    .teacher-role {
+        font-size: 9px !important;
+        line-height: 1.5 !important;
+        letter-spacing: 1.5px !important;
+
+        text-align: center !important;
+    }
+
+    .teacher-editorial-line {
+        width: 40px !important;
+
+        margin: 20px auto !important;
+    }
+
+    .teacher-description {
+        width: 100% !important;
+        max-width: 320px !important;
+
+        margin: 0 auto !important;
+
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* MENSAGEM */
+
+    .dedication-message {
+        width: 100% !important;
+        max-width: 400px !important;
+
+        margin: 65px auto 0 !important;
+
+        text-align: center !important;
+    }
+
+    .message-line {
+        width: 45px !important;
+        margin: 0 auto 25px !important;
+    }
+
+    .dedication-message p {
+        font-size: 22px !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+    }
+
+    .message-signature {
+        font-size: 9px !important;
+        text-align: center !important;
+    }
+
+
+    /* ---------- 1º M ---------- */
+
+    .class-section {
+        width: 100% !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+
+        background: #26362a !important;
+    }
+
+    .class-team-photo {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+
+        background: #26362a !important;
+
+        text-align: center !important;
+    }
+
+    .class-team-image {
+        width: 100% !important;
+        margin: 0 !important;
+
+        background: #26362a !important;
+    }
+
+    .class-team-image img {
+        width: 100% !important;
+        height: auto !important;
+
+        display: block !important;
+
+        object-fit: contain !important;
+        object-position: center !important;
+    }
+
+    .class-team-photo > p {
+        margin: 12px 20px 0 !important;
+
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* AGRADECIMENTO */
+
+    .class-thanks {
+        width: 100% !important;
+
+        padding: 75px 20px 90px !important;
+
+        background: #26362a !important;
+
+        text-align: center !important;
+    }
+
+    .class-thanks-text {
+        width: 100% !important;
+        max-width: 420px !important;
+
+        margin: 0 auto !important;
+
+        text-align: center !important;
+    }
+
+    .class-thanks-label {
+        font-size: 10px !important;
+        letter-spacing: 1.7px !important;
+
+        text-align: center !important;
+    }
+
+    .class-thanks h3 {
+        font-size: 43px !important;
+        line-height: .98 !important;
+
+        letter-spacing: -1px !important;
+
+        text-align: center !important;
+    }
+
+    .class-thanks-description {
+        width: 100% !important;
+        max-width: 360px !important;
+
+        margin: 28px auto 0 !important;
+
+        font-size: 14px !important;
+        line-height: 1.75 !important;
+
+        text-align: center !important;
+    }
+
+}
+/* =====================================================
+   CORREÇÃO FINAL — PROFESSORAS + TURMA
+   ===================================================== */
+
+/* ---------- PROFESSORAS ---------- */
+
+.teachers-editorial {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.teacher-editorial {
+    width: 100%;
+    min-width: 0;
+    background: #26362a;
+    border: 1px solid rgba(217, 226, 218, 0.18);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.teacher-editorial-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.teacher-number {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #b9c8bc;
+}
+
+.teacher-star {
+    color: #d9e2da;
+    font-size: 18px;
+}
+
+.teacher-editorial-photo {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.teacher-editorial-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.teacher-editorial-info {
+    width: 100%;
+}
+
+.teacher-editorial-info h3 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 0.98;
+}
+
+.teacher-role {
+    margin: 0;
+    color: #b9c8bc;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+.teacher-editorial-line {
+    width: 45px;
+    height: 1px;
+    background: #b9c8bc;
+    margin: 20px 0;
+}
+
+.teacher-description {
+    margin: 0;
+    color: #d9e2da;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ---------- FOTO + AGRADECIMENTO DA TURMA ---------- */
+
+.class-section {
+    width: 100%;
+    background: #26362a !important;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.class-team-photo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 40px 0;
+    box-sizing: border-box;
+    background: #26362a !important;
+    text-align: center;
+}
+
+.class-team-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.class-team-image img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.class-team-photo > p {
+    margin: 15px auto 0;
+    color: #b9c8bc;
+    font-size: 12px;
+    text-align: center;
+}
+
+.class-thanks {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 40px 100px;
+    box-sizing: border-box;
+    background: #26362a !important;
+    color: #ffffff;
+    text-align: center;
+}
+
+.class-thanks-text {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.class-thanks-label {
+    margin: 0 0 20px;
+    color: #b9c8bc;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.class-thanks h3 {
+    margin: 0 auto 25px;
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 1.05;
+}
+
+.class-thanks h3 span {
+    color: #b9c8bc;
+}
+
+.class-thanks-description {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #d9e2da;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+/* =====================================================
+   PROFESSORAS — AJUSTE FINAL
+   ===================================================== */
+
+.teachers-editorial {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    text-align: left;
+}
+
+.teacher-editorial {
+    width: 100%;
+    min-width: 0;
+    background: #26362a;
+    border: 1px solid rgba(217, 226, 218, 0.18);
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.teacher-editorial-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.teacher-editorial-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1 !important;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.teacher-editorial-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.teacher-editorial-info {
+    width: 100%;
+    text-align: left !important;
+}
+
+.teacher-editorial-info h3 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 0.98;
+    text-align: left !important;
+}
+
+.teacher-role {
+    margin: 0;
+    color: #b9c8bc;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    text-align: left !important;
+}
+
+.teacher-editorial-line {
+    width: 45px;
+    height: 1px;
+    background: #b9c8bc;
+    margin: 20px 0;
+}
+
+.teacher-description {
+    margin: 0;
+    color: #d9e2da;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: left !important;
+}
+
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .teachers-editorial {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 35px auto 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 28px !important;
+
+        padding: 0 !important;
+        text-align: left !important;
+    }
+
+    .teacher-editorial {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+
+        text-align: left !important;
+    }
+
+    .teacher-editorial-photo {
+        width: 100% !important;
+        aspect-ratio: 1 / 1 !important;
+        height: auto !important;
+        margin-bottom: 20px !important;
+        overflow: hidden !important;
+    }
+
+    .teacher-editorial-photo img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    .teacher-editorial-info {
+        width: 100% !important;
+        text-align: left !important;
+    }
+
+    .teacher-editorial-info h3 {
+        width: 100% !important;
+        font-size: 32px !important;
+        line-height: 1 !important;
+        margin: 0 0 10px !important;
+        text-align: left !important;
+    }
+
+    .teacher-role {
+        text-align: left !important;
+    }
+
+    .teacher-editorial-line {
+        margin: 16px 0 !important;
+    }
+
+    .teacher-description {
+        width: 100% !important;
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+        text-align: left !important;
+    }
+}
+
+    /* FOTO DA TURMA */
+
+    .class-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #26362a !important;
+    }
+
+    .class-team-photo {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 35px 20px 0 !important;
+        margin: 0 !important;
+        background: #26362a !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .class-team-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .class-team-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+        object-fit: contain !important;
+    }
+
+    .class-team-photo > p {
+        width: 100% !important;
+        margin: 12px auto 0 !important;
+        text-align: center !important;
+        font-size: 11px !important;
+    }
+
+
+    /* TEXTO DA TURMA */
+
+    .class-thanks {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 55px 20px 65px !important;
+        margin: 0 !important;
+        background: #26362a !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .class-thanks-text {
+        width: 100% !important;
+        max-width: 600px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .class-thanks-label {
+        width: 100% !important;
+        margin: 0 auto 18px !important;
+        text-align: center !important;
+    }
+
+    .class-thanks h3 {
+        width: 100% !important;
+        margin: 0 auto 25px !important;
+        font-size: 34px !important;
+        line-height: 1.08 !important;
+        text-align: center !important;
+    }
+
+    .class-thanks-description {
+        width: 100% !important;
+        max-width: 520px !important;
+        margin: 0 auto !important;
+        font-size: 14px !important;
+        line-height: 1.75 !important;
+        text-align: center !important;
+    }
+}
+/* =====================================================
+   PROFESSORAS — MODELO DA REFERÊNCIA
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .teachers-editorial {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        border-top: none !important;
+    }
+
+    .teacher-editorial {
+        position: relative !important;
+
+        width: 100% !important;
+        max-width: 545px !important;
+
+        margin: 0 auto 35px !important;
+        padding: 45px 45px 50px !important;
+
+        background: #ffffff !important;
+        border: 1px solid #dedfd7 !important;
+
+        box-sizing: border-box !important;
+
+        text-align: left !important;
+    }
+
+    /* NÚMERO */
+
+    .teacher-editorial-top {
+        width: 100% !important;
+
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+
+        margin: 0 0 35px !important;
+    }
+
+    .teacher-number {
+        color: #71875d !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        letter-spacing: 2px !important;
+    }
+
+    /* QUADRADO VERDE */
+
+    .teacher-star {
+        position: absolute !important;
+
+        top: 0 !important;
+        right: 0 !important;
+
+        width: 72px !important;
+        height: 72px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+
+        background: #71875d !important;
+        color: #ffffff !important;
+
+        font-size: 22px !important;
+    }
+
+    /* FOTO */
+
+    .teacher-editorial-photo {
+        width: 100% !important;
+        max-width: none !important;
+
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important;
+
+        margin: 0 0 38px !important;
+
+        overflow: hidden !important;
+    }
+
+    .teacher-editorial-photo img {
+        width: 100% !important;
+        height: 100% !important;
+
+        display: block !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
+    /* TEXTO */
+
+    .teacher-editorial-info {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+
+        text-align: left !important;
+    }
+
+    .teacher-editorial-info h3 {
+        width: 100% !important;
+
+        margin: 0 0 15px !important;
+
+        color: #20251f !important;
+
+        font-size: 38px !important;
+        line-height: 1 !important;
+        font-weight: 400 !important;
+
+        text-align: left !important;
+    }
+
+    .teacher-role {
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        color: #71875d !important;
+
+        font-size: 10px !important;
+        font-weight: 700 !important;
+
+        letter-spacing: 2px !important;
+        line-height: 1.5 !important;
+
+        text-align: left !important;
+    }
+
+    .teacher-editorial-line {
+        width: 45px !important;
+        height: 1px !important;
+
+        margin: 25px 0 !important;
+
+        background: #b9c4b0 !important;
+    }
+
+    .teacher-description {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        color: #686f66 !important;
+
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+
+        text-align: left !important;
+    }
+
+    /* SEPARAÇÃO ENTRE PROFESSORAS */
+
+    .teacher-editorial + .teacher-editorial {
+        padding-top: 45px !important;
+        border-top: 1px solid #d5d9d1 !important;
+    }
+}
+/* =====================================================
+   AJUSTE FINAL DAS PROFESSORAS
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .teachers-editorial {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 30px 0 0 !important;
+        gap: 35px !important;
+        border-top: 0 !important;
+    }
+
+    .teacher-editorial {
+        position: relative !important;
+
+        width: calc(100% - 40px) !important;
+        max-width: 545px !important;
+
+        margin: 0 auto !important;
+        padding: 35px 25px 45px !important;
+
+        background: #ffffff !important;
+        border: 1px solid #dedfd7 !important;
+
+        text-align: left !important;
+        box-sizing: border-box !important;
+    }
+
+    /* NÚMERO */
+
+    .teacher-editorial-top {
+        width: 100% !important;
+        margin: 0 0 35px !important;
+
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+    }
+
+    .teacher-number {
+        color: #71875d !important;
+        font-size: 12px !important;
+        letter-spacing: 2px !important;
+    }
+
+    /* QUADRADO VERDE */
+
+    .teacher-star {
+        position: absolute !important;
+
+        top: 0 !important;
+        right: 0 !important;
+
+        width: 72px !important;
+        height: 72px !important;
+
+        margin: 0 !important;
+
+        border: none !important;
+        border-radius: 0 !important;
+
+        background: #71875d !important;
+        color: white !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 22px !important;
+    }
+
+    /* FOTO QUADRADA */
+
+    .teacher-editorial-photo {
+        width: 100% !important;
+        max-width: none !important;
+
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important;
+
+        margin: 0 0 35px !important;
+
+        overflow: hidden !important;
+    }
+
+    .teacher-editorial-photo img {
+        width: 100% !important;
+        height: 100% !important;
+
+        display: block !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
+    /* TEXTO À ESQUERDA */
+
+    .teacher-editorial-info {
+        width: 100% !important;
+        margin: 0 !important;
+
+        display: block !important;
+
+        text-align: left !important;
+    }
+
+    .teacher-editorial-info h3 {
+        width: 100% !important;
+
+        margin: 0 0 15px !important;
+
+        font-size: 38px !important;
+        line-height: 1 !important;
+        font-weight: 400 !important;
+
+        text-align: left !important;
+        color: #20251f !important;
+    }
+
+    .teacher-role {
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        text-align: left !important;
+
+        color: #71875d !important;
+        font-size: 10px !important;
+        letter-spacing: 1.8px !important;
+    }
+
+    .teacher-editorial-line {
+        width: 45px !important;
+        height: 1px !important;
+
+        margin: 22px 0 !important;
+
+        background: #b9c4b0 !important;
+    }
+
+    .teacher-description {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        text-align: left !important;
+
+        color: #686f66 !important;
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+}
+.teacher-editorial-photo {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.teacher-editorial-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teacher-editorial-info {
+    text-align: left;
+}
+
+.teacher-editorial-info h3,
+.teacher-role,
+.teacher-description {
+    text-align: left;
+}
