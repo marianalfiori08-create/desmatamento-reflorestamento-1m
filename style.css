@@ -7861,3 +7861,16 @@ footer p {
 .teacher-description {
     text-align: left;
 }
+/* AJUSTE ESPECÍFICO — JAQUELINE */
+.teacher-editorial:nth-child(2) .teacher-editorial-photo {
+    aspect-ratio: 1 / 1 !important;
+    overflow: hidden !important;
+}
+
+.teacher-editorial:nth-child(2) .teacher-editorial-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+}
