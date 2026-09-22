@@ -7893,3 +7893,59 @@ footer p {
 .site-header h1 {
     color: #71875d !important;
 }
+/* ================================
+   AJUSTE FINAL — PROFESSORAS
+   ================================ */
+
+/* Agradecimento centralizado */
+.dedication-message {
+    width: 100% !important;
+    max-width: 850px !important;
+    margin: 80px auto 60px !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+.dedication-message * {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Título "1º M • FLORESTAS" */
+.site-header .brand,
+.site-header .logo,
+.site-header .brand-name,
+.site-header h1 {
+    color: #8a9f72 !important;
+}
+
+/* Mantém o texto das professoras alinhado à esquerda */
+.teacher-editorial-info {
+    text-align: left !important;
+}
+
+.teacher-editorial-info h3,
+.teacher-role,
+.teacher-description {
+    text-align: left !important;
+}
+
+/* Espaço melhor entre os cards e o agradecimento */
+.teachers-editorial {
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 700px) {
+    .dedication-message {
+        width: calc(100% - 40px) !important;
+        max-width: 600px !important;
+        margin: 70px auto 50px !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    .dedication-message * {
+        text-align: center !important;
+    }
+}
